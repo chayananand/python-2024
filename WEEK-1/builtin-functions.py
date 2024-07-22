@@ -22,7 +22,9 @@ Date: February 7 2024
 print('Hello world!')
 print('Hello', 'world!')
 print('Helllo', 'world', '!')
-print('line 1', end='')
+print('line 1') 
+print('line 2')
+print('line 1', end='') # the end parameter in the print function to specify what should be printed at the end of the line instead of the default newline character.
 print('line 2')
 
 # Demonstrating the len function with strings and lists
@@ -42,7 +44,7 @@ print(max(1, 2, 3, 10, -100, 0))
 print(sum([1, 2, 3, 10, -100, 0]))
 
 # Demonstrating conversion functions
-print(4 == '4')
+print(4 == '4') #in Python compares an integer (4) with a string ('4')
 print(4 == int('4'))
 print(str(4) == '4')
 
@@ -51,7 +53,7 @@ print(float(g) + 0.19)
 print(int(float(g)))
 
 # Demonstrating the range function and converting it to a list
-print(range(1, 6, 1))
+print(range(1, 6, 1)) #the range function in Python, it generates a range object, which is a sequence of numbers. To see the numbers in the range, you need to convert it to a list.
 r = range(101)
 print(list(r))
 evens = range(0, 101, 2)
@@ -70,3 +72,6 @@ letters = list('Python')
 
 # Displaying the list of attributes for an empty list
 print(dir([]))
+
+# The dir functio n in Python is used to list the attributes and methods of an object. 
+# When you pass an empty list ([]) to the dir function, it returns a list of all the methods and attributes associated with list objects.
